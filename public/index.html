@@ -37,10 +37,10 @@
                         <h3>{{book.name}}</h3>
                         <p>{{"Ksh. " + book.price + ".00"}}</p>
                         <ul class="list-unstyled list-inline">
-                            <li>Rating: {{book.rating}}</li>
-                            <li>Binding: {{book.binding}}</li>
-                            <li>Publisher: {{book.publisher}}</li>
-                            <li>Released: {{book.releaseDate}}</li>
+                            <li><b>Rating:</b> {{book.rating}}</li><br>
+                            <li><b>Binding:</b> {{book.binding}}</li><br>
+                            <li><b>Publisher:</b> {{book.publisher}}</li><br>
+                            <li><b>Released:</b> {{book.releaseDate}}</li>
                         </ul>
                         <p>{{book.details}}</p>
                         <button class="btn btn-success pull-right" ng-click="addToKart(book)">Add to Kart</button>
