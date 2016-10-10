@@ -13,7 +13,6 @@
         <div id="header-wrapper" ng-controller="HeaderCtrl">
             <span class="logo pull-left">{{appDetails.title}}</span>
             <span class="tagline pull-left">{{appDetails.tagline}}</span>
-            <br>
             <div class="nav-wrapper pull-left">
                 <ul class="nav nav-pills">
                     <li class="active"><a href="#">Books</a></li>
@@ -21,6 +20,7 @@
                 </ul>
             </div>
         </div>
+        <br>
         <div id="bookListWrapper" ng-controller="BookListCtrl">
             <form role="form">
               <div class="form-group">
@@ -42,7 +42,7 @@
                             <li>Released: {{book.releaseDate}}</li>
                         </ul>
                         <p>{{book.details}}</p>
-                        <button class="btn btn-info pull-right" ng-click="addToKart(book)">Add to Kart</button>
+                        <button class="btn btn-success pull-right" ng-click="addToKart(book)">Add to Kart</button>
                     </div>
                 </li>
             </ul>
